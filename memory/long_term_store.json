@@ -1,0 +1,22 @@
+{
+  "product_taxonomy": [
+    "Performance Issues",
+    "UI & User Experience",
+    "Feature Requests",
+    "Security Enhancements",
+    "Onboarding Experience",
+    "Customer Support",
+    "Notifications & Alerts",
+    "Integrations",
+    "Pricing & Billing",
+    "Miscellaneous Requests"
+  ],
+  "past_roadmap": [
+    "dark mode",
+    "push notifications",
+    "two-factor authentication",
+    "CSV export",
+    "bulk upload"
+  ],
+  "historical_themes": {}
+}

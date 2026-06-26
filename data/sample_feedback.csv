@@ -1,0 +1,21 @@
+id,text,source,date
+1,The app crashed as soon as I opened the dashboard.,app_store,2023-10-01T10:00:00Z
+2,I love the new layout, but the font is too small.,web_form,2023-10-01T10:05:00Z
+3,It takes almost 10 seconds to load the profile page.,support_email,2023-10-01T11:20:00Z
+4,Pricing is way too high for small teams.,twitter,2023-10-02T09:15:00Z
+5,Can you add an integration with Slack?,feature_board,2023-10-02T14:30:00Z
+6,Notification badges are not disappearing after I read the message.,app_store,2023-10-03T08:45:00Z
+7,We need role-based access control for enterprise security.,support_email,2023-10-03T11:00:00Z
+8,Dark mode would be amazing for night-time reading.,feature_board,2023-10-04T16:20:00Z
+9,The new pricing tier doesn't make sense.,web_form,2023-10-04T18:10:00Z
+10,Constant freezing when trying to upload a large CSV file.,app_store,2023-10-05T09:00:00Z
+11,Onboarding was super confusing, I had to watch a YouTube tutorial.,twitter,2023-10-05T12:00:00Z
+12,Support team was very helpful and responsive.,support_email,2023-10-06T10:30:00Z
+13,I'm missing a feature to export data to PDF.,feature_board,2023-10-06T14:15:00Z
+14,The UI feels cluttered on mobile devices.,app_store,2023-10-07T08:00:00Z
+15,Battery drains extremely fast when using this app.,app_store,2023-10-07T15:45:00Z
+16,I wish it integrated with Microsoft Teams.,feature_board,2023-10-08T09:30:00Z
+17,Onboarding took way too long.,web_form,2023-10-08T11:15:00Z
+18,Security features are lacking compared to competitors.,support_email,2023-10-09T13:20:00Z
+19,Why does it crash every time I hit save?,twitter,2023-10-09T16:00:00Z
+20,Please add support for push notifications on Android.,feature_board,2023-10-10T10:00:00Z
