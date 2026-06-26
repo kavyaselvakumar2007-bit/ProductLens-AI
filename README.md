@@ -6,7 +6,7 @@
 
 # 🚀 ProductLens AI
 
-**AI-Powered Customer Feedback Intelligence Platform**
+**Multi-Agent Customer Feedback Intelligence Platform**
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![Gradio](https://img.shields.io/badge/Gradio-FF7C00?style=for-the-badge&logo=gradio&logoColor=white)
@@ -19,7 +19,7 @@
 
 ## 🌟 Overview
 
-ProductLens AI analyzes customer feedback through a specialized multi-agent system. It uses a Planner Agent and Worker Agents to process feedback, prioritizes themes based on user data, and generates product roadmap recommendations. The insights are intelligently analyzed using Google Gemini and visualized in a Gradio dashboard.
+ProductLens AI analyzes customer feedback through a specialized multi-agent system. It uses a Planner Agent and Specialized Worker Agents to process feedback, prioritizes themes based on user data, and generates product roadmap recommendations. The insights are intelligently analyzed using Google Gemini and visualized in a Gradio dashboard.
 
 ---
 
@@ -84,6 +84,25 @@ The processing pipeline leverages an intelligent orchestration model where speci
 | **Plotly** | Interactive charting and visualizations |
 | **Markdown** | Rich text formatting for agent outputs |
 | **CSV** | Primary data ingestion format |
+
+**Key features**
+🤖 Multi-Agent Pipeline
+
+📈 Sentiment Analysis
+
+🧠 Theme Extraction
+
+📊 Interactive Dashboard
+
+📂 CSV Upload
+
+🎯 Priority Ranking
+
+📑 Developer Logs
+
+📡 Observability
+
+⚡ Google Gemini Powered
 
 ---
 
@@ -157,13 +176,18 @@ python app.py
 
 ---
 
-## 💡 Example Output
 
-Example output generated from the bundled sample dataset.
+- ## 📊 Results
 
-- **Theme:** App Performance & Load Times
-- **Feature Request:** Optimize Android client load speed.
-- **Justification:** Multiple users reported significant lag during startup and navigation.
+✔ Processed 20+ customer reviews
+
+✔ Identified 9 unique themes
+
+✔ Generated roadmap recommendations
+
+✔ Confidence Score: 92%
+
+✔ Runtime: 23.8 sec
 
 ---
 
@@ -185,8 +209,7 @@ Example output generated from the bundled sample dataset.
 <div align="center">
 
 ⭐ If you found this project useful, consider giving it a star.
-
-Built with Python • Gradio • Plotly • Google Gemini • Multi-Agent AI
+Built with Python • Gradio • Plotly • Gemini 3.1 pro(High) • Multi-Agent AI
 
 Developed as part of the Kaggle AI Agents Capstone Project.
 
