@@ -1,23 +1,141 @@
-# ProductLens AI 🚀
-Transform customer feedback into actionable product roadmap recommendations using autonomous AI agents.
+<div align="center">
 
-## Overview
-ProductLens AI is an end-to-end multi-agent SaaS application built for product managers. It takes raw feedback (CSV, Text, JSON), processes it through specialized autonomous agents (Planner, Worker, Evaluator), and outputs a dynamic, business-friendly dashboard outlining critical themes, confidence scores, and suggested roadmap actions.
+<img src="assets/banner.png" alt="ProductLens AI Banner" width="100%">
 
-## Features
-- **Multi-Agent Orchestration**: Zero-dependency `MessageBus` coordinating independent LLM agents.
-- **Premium Enterprise UI**: Glassmorphism, animations, and dark-theme SaaS dashboard using Gradio.
-- **Analytics & Observability**: Interactive Plotly charts and robust developer logging.
-- **Zero-Database Setup**: In-memory and local JSON storage for ultimate portability.
+<br />
 
-## Installation
+# 🚀 ProductLens AI
+
+**AI-Powered Customer Feedback Intelligence Platform**
+
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Gradio](https://img.shields.io/badge/Gradio-FF7C00?style=for-the-badge&logo=gradio&logoColor=white)
+![AI Agents](https://img.shields.io/badge/AI%20Agents-000000?style=for-the-badge&logo=openai&logoColor=white)
+![CSV Analytics](https://img.shields.io/badge/CSV%20Analytics-107C41?style=for-the-badge&logo=microsoftexcel&logoColor=white)
+
+</div>
+
+---
+
+## 🌟 Overview
+
+ProductLens AI analyzes customer feedback through a specialized multi-agent system. It uses a Planner Agent and Worker Agents to process feedback, prioritizes themes based on user data, and generates product roadmap recommendations. The insights are intelligently analyzed using Google Gemini and visualized in a Gradio dashboard.
+
+---
+
+## 📸 Dashboard Preview
+
+<div align="center">
+  <table>
+    <tr>
+      <td align="center"><b>Dashboard</b></td>
+      <td align="center"><b>Pipeline Execution</b></td>
+    </tr>
+    <tr>
+      <td><img src="assets/dashboard.png" alt="Dashboard" width="400"></td>
+      <td><img src="assets/pipeline.png" alt="Pipeline Execution" width="400"></td>
+    </tr>
+    <tr>
+      <td align="center"><b>Data Ingestion</b></td>
+      <td align="center"><b>Observability Logs</b></td>
+    </tr>
+    <tr>
+      <td><img src="assets/data_ingestion.png" alt="Data Ingestion" width="400"></td>
+      <td><img src="assets/observability.png" alt="Observability" width="400"></td>
+    </tr>
+  </table>
+</div>
+
+---
+
+## 🏗️ Architecture
+
+The processing pipeline leverages an intelligent orchestration model where specialized agents collaborate to analyze data:
+
+
+
+<div align="center">
+  <img src="assets/architecture.png" alt="Architecture Diagram" width="800">
+</div>
+
+---
+
+## ⚙️ Project Workflow
+
+1. **CSV Upload**
+2. **Planner Agent**
+3. **Worker Agents**
+4. **Theme Extraction**
+5. **Prioritization**
+6. **Evaluator**
+7. **Dashboard**
+8. **Recommendations**
+
+---
+
+## 💻 Technology Stack
+
+| Technology | Purpose |
+| :--- | :--- |
+| **Python** | Core backend language |
+| **Gradio** | Interactive web UI framework |
+| **Google Gemini** | LLM backend for intelligent processing via `google-generativeai` |
+| **Pandas** | Data manipulation and analysis |
+| **Plotly** | Interactive charting and visualizations |
+| **Markdown** | Rich text formatting for agent outputs |
+| **CSV** | Primary data ingestion format |
+
+---
+
+## 📁 Folder Structure
+
+```text
+ProductLens-AI/
+├── agents/             # Autonomous AI Agents
+├── assets/             # Images and brand assets
+├── core/               # Core application logic
+├── data/               # Datasets and sample CSVs
+│   └── sample_feedback.csv
+├── logs/               # Application logs and observability data
+├── memory/             # Agent memory and state management
+├── outputs/            # Generated reports and insights
+├── tools/              # Helper utilities and tools
+├── .env.example        # Environment variables template
+├── .gitignore          # Git ignore rules
+├── README.md           # Documentation
+├── app.py              # Main Gradio application entry point
+├── main_agent.py       # Main agent logic
+├── requirements.txt    # Project dependencies
+└── test_app.py         # Testing script
+```
+
+---
+
+## 📂 Repository Structure
+
+| Folder | Responsibility |
+| :--- | :--- |
+| **`agents/`** | Contains definitions and prompts for the autonomous AI agents (Planner, Worker, Evaluator). |
+| **`assets/`** | Stores visual assets for documentation like banners and dashboard screenshots. |
+| **`core/`** | Houses the core application logic and agent orchestration system. |
+| **`data/`** | Contains raw datasets and sample CSV files for pipeline ingestion. |
+| **`logs/`** | Stores application logs and observability metrics. |
+| **`memory/`** | Manages conversational memory and persistent state for the agents. |
+| **`outputs/`** | Directory where generated reports, insights, and recommendations are saved. |
+| **`tools/`** | Helper utilities and functions utilized by the application. |
+
+---
+
+## 🚀 Installation
+
+Follow these steps to run ProductLens AI locally:
 
 ```bash
-# 1. Clone repository
-git clone https://github.com/yourusername/productlens-ai.git
-cd productlens-ai
+# 1. Clone the repository
+git clone https://github.com/kavyaselvakumar2007-bit/ProductLens-AI.git
+cd ProductLens-AI
 
-# 2. Set up virtual environment
+# 2. Create a virtual environment
 python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
 
@@ -25,33 +143,65 @@ source venv/bin/activate  # On Windows: venv\Scripts\activate
 pip install -r requirements.txt
 
 # 4. Set up environment variables
+# Linux/macOS
 cp .env.example .env
+
+# Windows
+copy .env.example .env
+
 # Edit .env and add your GEMINI_API_KEY
-```
 
-## Running Locally
-
-To launch the premium Gradio dashboard:
-```bash
+# 5. Launch the application
 python app.py
 ```
 
-To run the CLI pipeline tool:
-```bash
-python run_demo.py
-```
+---
 
-## Hugging Face Spaces Deployment
+## 💡 Example Output
 
-This application is fully compatible with Hugging Face Spaces (Gradio SDK).
+Example output generated from the bundled sample dataset.
 
-1. Create a new Space on Hugging Face (SDK: Gradio).
-2. Upload the project files.
-3. In the Space Settings, add your `GEMINI_API_KEY` to the **Repository Secrets**.
-4. Hugging Face will automatically install `requirements.txt` and run `app.py`.
+- **Theme:** App Performance & Load Times
+- **Feature Request:** Optimize Android client load speed.
+- **Justification:** Multiple users reported significant lag during startup and navigation.
 
-## Built With
-- **Google Gemini 1.5 Flash** (via `google-generativeai`)
-- **Gradio** (Frontend framework)
-- **Plotly & Pandas** (Data visualization)
-- **Python 3.10+**
+---
+
+## 🏆 Example Pipeline Metrics
+
+*Metrics shown below were generated using the included sample dataset.*
+
+<div align="center">
+  <table>
+    <tr>
+      <td align="center"><h2>20+</h2><p>Feedback Processed</p></td>
+      <td align="center"><h2>9</h2><p>Themes Identified</p></td>
+    </tr>
+  </table>
+</div>
+
+---
+
+<div align="center">
+
+⭐ If you found this project useful, consider giving it a star.
+
+Built with Python • Gradio • Plotly • Google Gemini • Multi-Agent AI
+
+Developed as part of the Kaggle AI Agents Capstone Project.
+
+</div>
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License.
+
+---
+
+## 👨‍💻 Author
+
+**Kavya Dharshini S**
+
+GitHub: https://github.com/kavyaselvakumar2007-bit
